@@ -50,4 +50,6 @@ public abstract class Mammal implements Animal {
     public Integer getId() {
         return id;
     }
+
+
 }

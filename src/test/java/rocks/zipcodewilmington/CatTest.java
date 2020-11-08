@@ -34,6 +34,8 @@ public class CatTest {
         Assert.assertEquals(expected, actual);
     }
 
+
+
     // TODO - Create tests for `speak`
     @Test
     public void speakTest() {
@@ -60,6 +62,14 @@ public class CatTest {
         // then
         Date actual = cat.getBirthDate();
         Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void IdTest(){
+        Integer expected = cat.getId();
+                //set id test?
+        Integer actual = cat.getId();
+        Assert.assertEquals(expected,actual);
     }
 
     // TODO - Create tests for `void eat(Food food)`

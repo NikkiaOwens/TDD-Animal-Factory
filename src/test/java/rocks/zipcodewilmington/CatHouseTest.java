@@ -11,7 +11,7 @@ import rocks.zipcodewilmington.animals.animal_storage.CatHouse;
 public class CatHouseTest {
     // TODO - Create tests for `void add(Cat cat)`
     @Test
-    public void addTest() {
+    public void addCatTest() {
         // given
         Cat expected = new Cat();
         Integer id = expected.getId();
@@ -24,11 +24,13 @@ public class CatHouseTest {
         Assert.assertEquals(expected, actual);
     }
 
+
+
     // TODO - Create tests for `void remove(Integer id)`
     @Test
-    public void removeTest() {
+    public void removeCatTest() {
         // given
-        Cat catToBeAdded = new Cat(null, null, 0);
+        Cat catToBeAdded = new Cat("null", null,  0);
         CatHouse.add(catToBeAdded);
         Integer id = catToBeAdded.getId();
 
@@ -42,10 +44,11 @@ public class CatHouseTest {
 
 
     // TODO - Create tests for `void remove(Cat cat)`
+
     @Test
-    public void removeByCatTest() {
+    public void removeCatIdTest() {
         // given
-        Cat catToBeAdded = new Cat(null, null, 0);
+        Cat catToBeAdded = new Cat(null, null,  0);
         CatHouse.add(catToBeAdded);
         Integer id = catToBeAdded.getId();
 
